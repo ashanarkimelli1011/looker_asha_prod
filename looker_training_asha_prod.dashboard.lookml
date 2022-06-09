@@ -7,7 +7,7 @@
   elements:
   - title: Total_Sessions
     name: Total_Sessions
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.distinct_session_count]
@@ -75,7 +75,7 @@
     height: 4
   - title: Avg Sessions Per Day
     name: Avg Sessions Per Day
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.avg_sessions_per_day]
@@ -100,7 +100,7 @@
     height: 4
   - title: Avg queries/session
     name: Avg queries/session
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.avg_queries_per_session]
@@ -125,7 +125,7 @@
     height: 4
   - title: Total Queries
     name: Total Queries
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.queries_count]
@@ -178,7 +178,7 @@
     height: 4
   - title: Total Handled Queries
     name: Total Handled Queries
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.count_handled_queries]
@@ -231,7 +231,7 @@
     height: 4
   - title: Total Unhandled Queries
     name: Total Unhandled Queries
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.count_fallback_queries]
@@ -284,7 +284,7 @@
     height: 4
   - title: Success_rate
     name: Success_rate
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.success_rate]
@@ -337,7 +337,7 @@
     height: 4
   - title: Avg Sentiment Score
     name: Avg Sentiment Score
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: marketplace_viz_radial_gauge::radial_gauge-marketplace
     fields: [dialogflow_cleaned_logs.avg_sentiment_score]
@@ -434,7 +434,7 @@
     height: 4
   - title: Weekly Average Sentiment Trend
     name: Weekly Average Sentiment Trend
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_column
     fields: [dialogflow_cleaned_logs.date_week, avg_sentiment_score]
@@ -541,7 +541,7 @@
     height: 10
   - title: Query Sentiment Distribution
     name: Query Sentiment Distribution
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_pie
     fields: [dialogflow_cleaned_logs.sentiment_bucketing, dialogflow_cleaned_logs.queries_count]
@@ -649,7 +649,7 @@
     height: 7
   - title: Busiest Hours
     name: Busiest Hours
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_funnel
     fields: [dialogflow_cleaned_logs.queries_count, dialogflow_cleaned_logs.grouping_of_hours]
@@ -757,7 +757,7 @@
     height: 10
   - title: User Utterances
     name: User Utterances
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_grid
     fields: [dialogflow_cleaned_logs.query_text, dialogflow_cleaned_logs.queries_count]
@@ -884,7 +884,7 @@
     height: 7
   - title: Top 10 Negative Queries
     name: Top 10 Negative Queries
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_grid
     fields: [dialogflow_cleaned_logs.sentiment_score, dialogflow_cleaned_logs.query_text]
@@ -1011,7 +1011,7 @@
     height: 7
   - title: Top 10 Positive Queries
     name: Top 10 Positive Queries
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_grid
     fields: [dialogflow_cleaned_logs.sentiment_score, dialogflow_cleaned_logs.query_text]
@@ -1138,7 +1138,7 @@
     height: 7
   - title: Traffic by time
     name: Traffic by time
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_area
     fields: [dialogflow_cleaned_logs.grouping_of_hourly_basis, dialogflow_cleaned_logs.distinct_session_count]
@@ -1185,7 +1185,7 @@
     height: 7
   - title: Conversation Distribution vs Duration
     name: Conversation Distribution vs Duration
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     type: looker_column
     fields: [session_level_view.duration_grouped, session_level_view.distinct_session_count]
@@ -1229,7 +1229,7 @@
     height: 7
   - title: Avg Sentiment Score vs Call Duration
     name: Avg Sentiment Score vs Call Duration
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     type: looker_column
     fields: [session_level_view.duration_grouped, session_level_view.avg_sentiment_score]
@@ -1273,7 +1273,7 @@
     height: 7
   - title: Traffic by Entry Intent
     name: Traffic by Entry Intent
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     type: looker_column
     fields: [session_level_view.entry_intent, session_level_view.distinct_session_count]
@@ -1317,7 +1317,7 @@
     height: 7
   - title: Traffic by Exit Intent
     name: Traffic by Exit Intent
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     type: looker_column
     fields: [session_level_view.distinct_session_count, session_level_view.exit_intent]
@@ -1361,7 +1361,7 @@
     height: 7
   - title: Total Queries vs Call Duration
     name: Total Queries vs Call Duration
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     type: looker_column
     fields: [session_level_view.duration_grouped, session_level_view.total_queries]
@@ -1405,7 +1405,7 @@
     height: 7
   - title: Intent Wise Information
     name: Intent Wise Information
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     type: looker_grid
     fields: [session_level_view.exit_intent, session_level_view.distinct_session_count,
@@ -1464,7 +1464,7 @@
     height: 7
   - title: Intent Cooccurance
     name: Intent Cooccurance
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: intent_cooccurances
     type: looker_column
     fields: [intent_cooccurances.parent_intent, intent_cooccurances.child_intent,
@@ -1624,7 +1624,7 @@
     height: 12
   - title: Weekly Intent Trend
     name: Weekly Intent Trend
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_line
     fields: [dialogflow_cleaned_logs.count, dialogflow_cleaned_logs.intent_triggered,
@@ -1776,7 +1776,7 @@
     height: 15
   - title: Deflection rate
     name: Deflection rate
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: deflection_view
     type: looker_pie
     fields: [deflection_view.deflection_rate, deflection_view.count]
@@ -1810,7 +1810,7 @@
     height: 7
   - title: Session Distribution vs Call Deflection
     name: Session Distribution vs Call Deflection
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: deflection_view
     type: looker_column
     fields: [deflection_view.deflection, deflection_view.count]
@@ -1873,7 +1873,7 @@
     height: 7
   - title: success_rate
     name: success_rate
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: single_value
     fields: [dialogflow_cleaned_logs.success_rate]
@@ -1929,7 +1929,7 @@
     height: 4
   - title: Average_call_duration
     name: Average_call_duration
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     type: single_value
     fields: [session_level_view.average_Session_duration]
@@ -1957,7 +1957,7 @@
     height: 4
   - title: Weekly Traffic_new
     name: Weekly Traffic_new
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     type: looker_column
     fields: [dialogflow_cleaned_logs.distinct_session_count, dialogflow_cleaned_logs.date_week]
@@ -2016,7 +2016,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: dialogflow_cleaned_logs
     listens_to_filters: []
     field: dialogflow_cleaned_logs.date_date
@@ -2030,7 +2030,7 @@
       type: advanced
       display: popover
       options: []
-    model: asha_looker_training
+    model: looker_training_asha_prod
     explore: session_level_view
     listens_to_filters: []
     field: session_level_view.entry_intent
