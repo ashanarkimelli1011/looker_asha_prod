@@ -2,6 +2,7 @@ connection: "de_looker_training_asha"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/**/*.dashboard"
 
 datagroup: asha_looker_training_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
